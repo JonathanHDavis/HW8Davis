@@ -1,0 +1,73 @@
+/*body {
+	background-color: lavender;
+}
+
+so background is lavender
+stuff below is what happens when size changes
+
+@media all and (max-width: 1000px) {
+	body {
+		background-color: orange;
+	}
+}
+smaller than 1000 turns orange
+
+@media all and (max-width: 500px) {
+	body {
+		background-color: green;
+	}
+
+	img {
+	display: none;
+	}
+
+}
+
+smaller than 500 turns green
+the img thing above means,
+when device is smaller than 500px, 
+image goes away
+*/
+
+.ImageGallery {
+	float: left;
+	width: 500px;
+	height: 500px;
+	background-image: url("MQPuppy.png");
+	background-size: cover;
+	/*without cover, itll try to fill*/
+	border: 5px solid blue;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+@media all and (max-width: 979px) {
+	.ImageGallery {
+		border: 2px solid orange;
+		margin-top: 2px;
+		margin-left: 2px;
+		background-image: url("MQPuppy2.png");
+		width: 400px;
+		height: 400px;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.ImageGallery {
+		border: none;
+		width: 100%;
+		margin-left: 1px;
+		background-image: url("MQPuppy3.png");
+	}
+}
+
+
+/*this is desktop first
+because it changes when gets smaller
+a lot of people say mobile first better
+since people use phones a lot
+so design it with phones in mind
+then have it change when gets bigger for desktop*/
+
+
+
